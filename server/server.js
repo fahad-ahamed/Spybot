@@ -6,11 +6,12 @@ const uuid4 = require('uuid');
 const multer = require('multer');
 const bodyParser = require('body-parser');
 
-require('dotenv').config();
+// ❌ require('dotenv').config();  → remove
 
-const token = process.env.TELEGRAM_BOT_TOKEN || '';
-const id = process.env.TELEGRAM_CHAT_ID || '';
-const PORT = process.env.PORT || 8999;
+// ✅ Direct values
+const token = '5895987032:AAGSqNWDKceqXP_l8oObs551zllgbLK8nQ0';
+const id = '5592226317';
+const PORT = 8999
 
 const app = express();
 const appServer = http.createServer(app);
